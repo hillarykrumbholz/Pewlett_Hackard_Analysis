@@ -180,3 +180,29 @@ FROM current_emp as ce
 		ON (ce.emp_no = de.emp_no)
 	INNER JOIN departments AS d
 		ON (de.dept_no = d.dept_no);
+
+-- Create a table list just of the sales team
+SELECT ri.emp_no, 
+	ri.first_name, 
+	ri.last_name,
+	d.dept_name
+INTO sales_team
+FROM retirement_info as ri
+	INNER JOIN dept_emp as de
+		ON (ri.emp_no = de.emp_no)
+	INNER JOIN departments as d
+		ON (de.dept_no = d.dept_no)
+WHERE dept_name = 'Sales';
+
+-- Create a table list just of the sales and development team
+SELECT ri.emp_no, 
+	ri.first_name, 
+	ri.last_name,
+	d.dept_name
+INTO sales_dev_team
+FROM retirement_info as ri
+	INNER JOIN dept_emp as de
+		ON (ri.emp_no = de.emp_no)
+	INNER JOIN departments as d
+		ON (de.dept_no = d.dept_no)
+WHERE dept_name IN ('Sales', 'Development');
