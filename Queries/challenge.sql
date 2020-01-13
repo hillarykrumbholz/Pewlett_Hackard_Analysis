@@ -288,3 +288,12 @@ AND ti.to_date = ('9999-01-01')
 ORDER BY title;
 
 SELECT * FROM mentor_ready;
+
+-- Create a table list of how many employees are ready for a mentorship
+SELECT title,
+	COUNT(*)
+INTO emp_to_be_mentor_count
+FROM mentor_ready
+GROUP BY title;
+
+SELECT * FROM emp_to_be_mentor_count;
