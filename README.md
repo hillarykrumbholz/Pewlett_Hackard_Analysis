@@ -52,7 +52,7 @@ A breakdown of idividuals available for the mentorship, and what departments the
 - Number of Individuals Needing to be Hired: 39,831 (Found by subtracting individuals available for mentorship from the individuals retiring.)
  
 ## Links to queries:
-[schema](https://github.com/hillarykrumbholz/Pewlett_Hackard_Analysis/blob/master/Queries/schema.sql)<br/>
-[quereies](https://github.com/hillarykrumbholz/Pewlett_Hackard_Analysis/blob/master/Queries/queries.sql)<br/>
-[challenge](https://github.com/hillarykrumbholz/Pewlett_Hackard_Analysis/blob/master/Queries/challenge.sql)<br/>
+[Schema](https://github.com/hillarykrumbholz/Pewlett_Hackard_Analysis/blob/master/Queries/schema.sql)<br/>
+[Queries from Module](https://github.com/hillarykrumbholz/Pewlett_Hackard_Analysis/blob/master/Queries/queries.sql)<br/>
+[Challenge](https://github.com/hillarykrumbholz/Pewlett_Hackard_Analysis/blob/master/Queries/challenge.sql)<br/>
 
