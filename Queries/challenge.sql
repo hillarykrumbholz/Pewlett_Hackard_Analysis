@@ -278,8 +278,7 @@ SELECT e.emp_no,
 	e.last_name,
 	ti.title,
 	ti.to_date,
-	ti.from_date,
-	e.birth_date
+	ti.from_date
 INTO mentor_ready
 FROM employees AS e
 	INNER JOIN titles AS ti
