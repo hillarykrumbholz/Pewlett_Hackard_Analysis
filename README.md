@@ -29,17 +29,20 @@ further analysis on this data set
 ## Module Objective
 Find the number of employees that are eligible for retirement and the departments they work in. We also want to know how many managers are working at Pewlett Hackard. Lastly, the sales team wants specifics of their department, so they need to know how many how many of their employees will be leaving. 
 
-- Number of employees in each department eligible for retirement:
+Number of employees in each department eligible for retirement:
 ![emp_dept](https://github.com/hillarykrumbholz/Pewlett_Hackard_Analysis/blob/master/Images/emp_count_dept.png)
 
-- Number of managers working at Pewlett Hackard:
+Number of managers working at Pewlett Hackard:
 ![managers](https://github.com/hillarykrumbholz/Pewlett_Hackard_Analysis/blob/master/Images/managers_in_each_dept.png)
 
 
 ## Challenge Objective
-Pewlett Hackard is wanting to introduce a mentoring program where experienced employees step back into a part-time role, while they mentor newly hired employees. We already have a list of mentors for each department, but HR would also like a list of current employees who would be good candidates for a supervisory role, and ideally born in 1695. 
+Pewlett Hackard is wanting to introduce a mentoring program where experienced employees step back into a part-time role, while they mentor newly hired employees. We already have a list of mentors for each department, but HR would also like a list of current employees who would be good candidates for a supervisory role, and ideally born in 1955. 
 
 - Number of Individuals Retiring: 41,380
+A breakdown of how many idividuals are retiring from each department:
+![dept_retiring](https://github.com/hillarykrumbholz/Pewlett_Hackard_Analysis/blob/master/Images/mentor_list_count.png)
+
 - Number of Individuals Available for a Mentorship Role: 1,549
 - Number of Individuals Needing to be Hired: 39,831 (Found by subtracting individuals available for mentorship from the individuals retiring.)
 
