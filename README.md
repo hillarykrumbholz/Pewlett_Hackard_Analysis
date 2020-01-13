@@ -53,3 +53,5 @@ I think it would be beneficial to have more filters as to who is eligible for th
 [Queries from Module](https://github.com/hillarykrumbholz/Pewlett_Hackard_Analysis/blob/master/Queries/queries.sql)<br/>
 [Challenge](https://github.com/hillarykrumbholz/Pewlett_Hackard_Analysis/blob/master/Queries/challenge.sql)<br/>
 
+## CSV Files
+All tables and csv files are located in the data folder.
