@@ -29,27 +29,34 @@ further analysis on this data set
 ## Module Objective
 Find the number of employees that are eligible for retirement and the departments they work in. We also want to know how many managers are working at Pewlett Hackard. Lastly, the sales team wants specifics of their department, so they need to know how many how many of their employees will be leaving. 
 
+We first filtered our list to show who would be retiring in the near future; we did this by looking at employees born between 1952 and 1955, and who were hired between 1985 and 1988. This gave us the cound of 41,380 employees. From this information, I wanted to see what departments these employees were currently working in. So a count was created for each of the nine departments.
+
 Number of employees in each department eligible for retirement:<br/>
 ![emp_dept](https://github.com/hillarykrumbholz/Pewlett_Hackard_Analysis/blob/master/Images/emp_count_dept.png)<br/>
+
+Next, it was important to see how many managers were working at Pewlett Hackard and what departments they were in. Interestingly, we found that there are only five managers working throughout the nine different departments. This seems unusual, and is something that should be addressed soon especially before there in an influx of new hires to the company. 
 
 Number of managers working at Pewlett Hackard:<br/>
 ![managers](https://github.com/hillarykrumbholz/Pewlett_Hackard_Analysis/blob/master/Images/managers_in_each_dept.png)<br/>
 
+The sales team requested information specifically to their department, so a list was generated estimating that 7,301 individuals would potentially be retiring soon, (the list also states the individuals' names). This prompted the manager from the Development department to request the same information, especially since in a joint effort with the Sales team, the two managers are looking to start up a new mentoring program. It was found that between their two departments, 18,928 individuals may be retiring soon. The mentorship program was looked into further during the challenge.
 
 ## Challenge Objective
 Pewlett Hackard is wanting to introduce a mentoring program where experienced employees step back into a part-time role, while they mentor newly hired employees. We already have a list of mentors for each department, but HR would also like a list of current employees who would be good candidates for a supervisory role, and ideally born in 1965. 
 
-- Number of Individuals Retiring: 41,380<br/>
-
-A breakdown of how many idividuals are retiring from each department:<br/>
+- Number of Individuals Retiring: 41,380.<br/>
+It should be noted that this information was previoulsy found. It was important to make sure that there were not any duplicate names in the list, caused by employees holding a prior position in the company.  however, I wanted to see what positions these individuals currently had. <br/>
 ![dept_retiring](https://github.com/hillarykrumbholz/Pewlett_Hackard_Analysis/blob/master/Images/mentor_list_count.png)
 
-- Number of Individuals Available for a Mentorship Role: 1,549
-
-A breakdown of idividuals available for the mentorship, and what departments they currently work in:<br/>
+- Number of Individuals Available for a Mentorship Role: 1,549<br/>
+Next, I wanted to generate a list of current employees that would be eligible candidates for the mentorship program. The limitations put on this list were that they needed to be current employees and to have been born in the year 1965. From this we found 1,549 employees that met the criteria. I was interested in seeing what positions these individuals currently held. <br/>
 ![ind_mentorship](https://github.com/hillarykrumbholz/Pewlett_Hackard_Analysis/blob/master/Images/emp_to_be_mentor_count.png)<br/>
 
-- Number of Individuals Needing to be Hired: 39,831 (Found by subtracting individuals available for mentorship from the individuals retiring.)
+- Number of Individuals Needing to be Hired: 39,831<br/>
+To find this information, I subtracted individuals available for mentorship from the individuals retiring. 
+
+- Recommendation for further analysis:<br/>
+I think it would be beneficial to have more filters as to who is eligible for the mentorship program. Rather than limiting it to employees born in the year 1965, I think it would be better to look at how long an employee has been working at the company. I believe it is more indicitive how successful an individual will be based on their past experience, rather than just their age.
  
 ## Links to queries:
 [Schema](https://github.com/hillarykrumbholz/Pewlett_Hackard_Analysis/blob/master/Queries/schema.sql)<br/>
