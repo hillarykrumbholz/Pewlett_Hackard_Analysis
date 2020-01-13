@@ -7,24 +7,8 @@ Pewlett Hackard is about to have a surge of employees are retiring around the sa
 - Data source: departments.csv, employees.csv, managers.csv, dept_emp.csv, titles.csv, salaries.csv
 - Software: PostgreSQL 11.6, Visual Studio Code 1.40.2
 
-Written report:
-Presents a cohesive written
-report that includes the
-following:
-Summary of the results
-✓ number of individuals retiring
-✓ number of individuals being
-hired
-✓ number of individuals
-available for mentorship role
-Additionally, the summary
-should include
-✓ one recommendation for
-further analysis on this data set
-
 ### The Entity Relationship Diagram:
 ![ERD](https://github.com/hillarykrumbholz/Pewlett_Hackard_Analysis/blob/master/Images/EmployeeDB.png)
-
 
 ## Module Objective
 Find the number of employees that are eligible for retirement and the departments they work in. We also want to know how many managers are working at Pewlett Hackard. Lastly, the sales team wants specifics of their department, so they need to know how many how many of their employees will be leaving. 
@@ -46,11 +30,17 @@ Pewlett Hackard is wanting to introduce a mentoring program where experienced em
 
 - Number of Individuals Retiring: 41,380.<br/>
 It should be noted that this information was previoulsy found. It was important to make sure that there were not any duplicate names in the list, caused by employees holding a prior position in the company.  however, I wanted to see what positions these individuals currently had. <br/>
-![dept_retiring](https://github.com/hillarykrumbholz/Pewlett_Hackard_Analysis/blob/master/Images/mentor_list_count.png)
+![dept_retiring](https://github.com/hillarykrumbholz/Pewlett_Hackard_Analysis/blob/master/Images/mentor_list_count.png)<br/>
+
+Snapshot of the table created:<br/>
+![titles_retiring](https://github.com/hillarykrumbholz/Pewlett_Hackard_Analysis/blob/master/Images/mentor_list.png)
 
 - Number of Individuals Available for a Mentorship Role: 1,549<br/>
 Next, I wanted to generate a list of current employees that would be eligible candidates for the mentorship program. The limitations put on this list were that they needed to be current employees and to have been born in the year 1965. From this we found 1,549 employees that met the criteria. I was interested in seeing what positions these individuals currently held. <br/>
 ![ind_mentorship](https://github.com/hillarykrumbholz/Pewlett_Hackard_Analysis/blob/master/Images/emp_to_be_mentor_count.png)<br/>
+
+Snapshot of the table created:<br/>
+![mentor_ready](https://github.com/hillarykrumbholz/Pewlett_Hackard_Analysis/blob/master/Images/mentor_ready.png)
 
 - Number of Individuals Needing to be Hired: 39,831<br/>
 To find this information, I subtracted individuals available for mentorship from the individuals retiring. 
