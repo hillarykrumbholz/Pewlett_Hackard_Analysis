@@ -45,6 +45,14 @@ A breakdown of how many idividuals are retiring from each department:<br/>
 ![dept_retiring](https://github.com/hillarykrumbholz/Pewlett_Hackard_Analysis/blob/master/Images/mentor_list_count.png)
 
 - Number of Individuals Available for a Mentorship Role: 1,549
+
+A breakdown of idividuals available for the mentorship, and what departments they currently work in:<br/>
+![ind_mentorship](https://github.com/hillarykrumbholz/Pewlett_Hackard_Analysis/blob/master/Images/emp_to_be_mentor_count.png)<br/>
+
 - Number of Individuals Needing to be Hired: 39,831 (Found by subtracting individuals available for mentorship from the individuals retiring.)
  
+## Links to queries:
+[schema](https://github.com/hillarykrumbholz/Pewlett_Hackard_Analysis/blob/master/Queries/schema.sql)<br/>
+[quereies](https://github.com/hillarykrumbholz/Pewlett_Hackard_Analysis/blob/master/Queries/queries.sql)<br/>
+[challenge](https://github.com/hillarykrumbholz/Pewlett_Hackard_Analysis/blob/master/Queries/challenge.sql)<br/>
 
