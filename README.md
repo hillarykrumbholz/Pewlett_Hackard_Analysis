@@ -37,7 +37,7 @@ Number of managers working at Pewlett Hackard:<br/>
 
 
 ## Challenge Objective
-Pewlett Hackard is wanting to introduce a mentoring program where experienced employees step back into a part-time role, while they mentor newly hired employees. We already have a list of mentors for each department, but HR would also like a list of current employees who would be good candidates for a supervisory role, and ideally born in 1955. 
+Pewlett Hackard is wanting to introduce a mentoring program where experienced employees step back into a part-time role, while they mentor newly hired employees. We already have a list of mentors for each department, but HR would also like a list of current employees who would be good candidates for a supervisory role, and ideally born in 1965. 
 
 - Number of Individuals Retiring: 41,380<br/>
 
