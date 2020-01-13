@@ -43,8 +43,8 @@ SELECT * FROM titles;
 SELECT * FROM dept_emp;
 
 -- fix 'titles' table problem
-DROP TABLE titles CASCADE;
-DROP TABLE dept_emp CASCADE;
+--DROP TABLE titles CASCADE;
+--DROP TABLE dept_emp CASCADE;
 
 CREATE TABLE titles (
 	emp_no INT NOT NULL,
@@ -95,10 +95,10 @@ AND (hire_date BETWEEN '1985-01-01' AND '1988-12-31');
 SELECT * FROM retirement_info;
  
 -- Number of employees retiring
---SELECT COUNT(first_name)
---FROM employees
---WHERE (birth_date BETWEEN '1952-01-01' AND '1955-12-31')
---AND (hire_date BETWEEN '1985-01-01' AND '1988-12-31');
+SELECT COUNT(first_name)
+FROM employees
+WHERE (birth_date BETWEEN '1952-01-01' AND '1955-12-31')
+AND (hire_date BETWEEN '1985-01-01' AND '1988-12-31');
 
 --DROP TABLE retirement_info;
 
@@ -122,7 +122,7 @@ LEFT JOIN dept_emp as de
 ON ri.emp_no = de.emp_no
 WHERE de.to_date = ('9999-01-01');
 
-DROP TABLE current_emp;
+--DROP TABLE current_emp;
 
 SELECT * FROM current_emp;
 	
@@ -134,6 +134,10 @@ LEFT JOIN dept_emp as de
 ON ce.emp_no = de.emp_no
 GROUP BY de.dept_no
 ORDER BY de.dept_no;
+
+SELECT * FROM emp_dept_count;
+
+--DROP TABLE emp_dept_count;
 
 -- Create a table about employee information
 SELECT e.emp_no,
@@ -169,6 +173,8 @@ FROM dept_manager AS dm
 	INNER JOIN current_emp AS ce
 		ON (dm.emp_no = ce.emp_no);
 		
+SELECT * FROM manager_info;
+		
 -- Create an updated list of current employees that includes their departments
 SELECT ce.emp_no,
 	ce.first_name,
@@ -180,6 +186,8 @@ FROM current_emp as ce
 		ON (ce.emp_no = de.emp_no)
 	INNER JOIN departments AS d
 		ON (de.dept_no = d.dept_no);
+		
+SELECT * FROM dept_info;
 
 -- Create a table list just of the sales team
 SELECT ri.emp_no, 
@@ -194,6 +202,8 @@ FROM retirement_info as ri
 		ON (de.dept_no = d.dept_no)
 WHERE dept_name = 'Sales';
 
+SELECT * FROM sales_team;
+
 -- Create a table list just of the sales and development team
 SELECT ri.emp_no, 
 	ri.first_name, 
@@ -206,6 +216,8 @@ FROM retirement_info as ri
 	INNER JOIN departments as d
 		ON (de.dept_no = d.dept_no)
 WHERE dept_name IN ('Sales', 'Development');
+
+SELECT * FROM sales_dev_team;
 
 -- Challenge Part 1:
 -- 1.1: Create a table listing the number of titles retiring
@@ -221,6 +233,8 @@ FROM retirement_info AS ri
 		ON (ri.emp_no = ti.emp_no)
 	INNER JOIN salaries AS s
 		ON (ti.emp_no = s.emp_no);	
+		
+SELECT * FROM titles_retiring;
 		
 -- 1.2: Create a table listing only the most recent titles(exclude duplicate names)
 -- Get a list of the employees that are dupicated 
@@ -247,6 +261,17 @@ FROM
 		) tmp WHERE rn = 1
 ORDER BY from_date DESC;
 
+SELECT * FROM mentor_list;
+
+-- Create a table list of how many mentors are retiring from each department
+SELECT title,
+	COUNT(*)
+INTO mentor_list_count
+FROM mentor_list
+GROUP BY title;
+
+SELECT * FROM mentor_list_count;
+
 --1.3: Create a table list of what employees are ready for a mentor
 SELECT e.emp_no,
 	e.first_name,
@@ -262,3 +287,5 @@ FROM employees AS e
 WHERE (birth_date BETWEEN '1965-01-01' AND '1965-12-31')
 AND ti.to_date = ('9999-01-01')
 ORDER BY title;
+
+SELECT * FROM mentor_ready;
