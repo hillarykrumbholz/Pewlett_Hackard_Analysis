@@ -29,11 +29,11 @@ further analysis on this data set
 ## Module Objective
 Find the number of employees that are eligible for retirement and the departments they work in. We also want to know how many managers are working at Pewlett Hackard. Lastly, the sales team wants specifics of their department, so they need to know how many how many of their employees will be leaving. 
 
-Number of employees in each department eligible for retirement:
-![emp_dept](https://github.com/hillarykrumbholz/Pewlett_Hackard_Analysis/blob/master/Images/emp_count_dept.png)
+Number of employees in each department eligible for retirement:<br/>
+![emp_dept](https://github.com/hillarykrumbholz/Pewlett_Hackard_Analysis/blob/master/Images/emp_count_dept.png)<br/>
 
-Number of managers working at Pewlett Hackard:
-![managers](https://github.com/hillarykrumbholz/Pewlett_Hackard_Analysis/blob/master/Images/managers_in_each_dept.png)
+Number of managers working at Pewlett Hackard:<br/>
+![managers](https://github.com/hillarykrumbholz/Pewlett_Hackard_Analysis/blob/master/Images/managers_in_each_dept.png)<br/>
 
 
 ## Challenge Objective
